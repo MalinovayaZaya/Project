@@ -79,8 +79,6 @@ int MaxFlow(int source, int target) // source - исток, target - сток
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
-
         int source, target, e;
         cout << "Enter NUM_VERTICES - ";
         cin >> NUM_VERTICES;
@@ -101,8 +99,8 @@ int main()
 	}
 
 if(e==0){
-       ifstream A; //Траблы строчкой ниже! Показывает красный кавадратик
-    A.open("C:\\Text\\Example.txt"); //Здест необходимо ввест ссылку на текстовый файл из компьютера (D:\\sites\\accounts.txt)    if(A.is_open()){
+       ifstream A;
+    A.open("C:\\Text\\Example.txt"); //Здесь необходимо ввест ссылку на текстовый файл из компьютера (D:\\sites\\accounts.txt)    if(A.is_open()){
     for (int i = 0; i < NUM_VERTICES; ++i){
 		for (int j = 0; j < NUM_VERTICES; ++j){
             A >> c[i][j];
